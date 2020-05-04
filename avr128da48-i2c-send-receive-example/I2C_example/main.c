@@ -20,12 +20,12 @@
     OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS
     SOFTWARE.
 */
-#define F_CPU                                           3333333     // 3MHz default clock
+#define F_CPU                                           4000000     // 4MHz default clock
 
 #include <avr/io.h>
 #include <util/delay.h>
 
-#define CLK_PER                                         3333333     // 3MHz default clock
+#define CLK_PER                                         4000000     // 4MHz default clock
 #define TWI0_BAUD(F_SCL, T_RISE)                        ((((((float)CLK_PER / (float)F_SCL)) - 10 - ((float)CLK_PER * T_RISE))) / 2)
 
 #define I2C_SCL_FREQ                                    100000
